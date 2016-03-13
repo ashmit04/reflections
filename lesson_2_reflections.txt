@@ -4,5 +4,13 @@ Creates an empty .git folder.We need it to allow git to prepare for the version 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Acts as a middle layer/checkpoint between the working dir and repo. Before you commit anything to repo its a good place to see what is the staus of file that you are about to commit.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
 staging area--intermediate area bw working dir and the git repo..can add files one at a time to this after git init
 git add-add files to staging area
+
+git diff can also be used to diff files bw working dir and staging area
+
+git diff --staged can be used to diff files bw staging area and the repo.
+
+git reset --hard discards any changes in working dir and staging area..be careful its irreversible.
