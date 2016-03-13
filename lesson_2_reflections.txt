@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+Creates an empty .git folder.We need it to allow git to prepare for the version control of this directory.Its like initalizing a variable.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Acts as a middle layer/checkpoint between the working dir and repo. Before you commit anything to repo its a good place to see what is the staus of file that you are about to commit.
+
+staging area--intermediate area bw working dir and the git repo..can add files one at a time to this after git init
+git add-add files to staging area
