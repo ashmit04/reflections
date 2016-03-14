@@ -6,6 +6,18 @@ Acts as a middle layer/checkpoint between the working dir and repo. Before you c
 
 How can you use the staging area to make sure you have one commit per logical change?
 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+My notes from Lesson 2
+
 staging area--intermediate area bw working dir and the git repo..can add files one at a time to this after git init
 git add-add files to staging area
 
@@ -14,3 +26,48 @@ git diff can also be used to diff files bw working dir and staging area
 git diff --staged can be used to diff files bw staging area and the repo.
 
 git reset --hard discards any changes in working dir and staging area..be careful its irreversible.
+
+git allows to label each commit so that you can have a different name for each branch that you work on
+
+master branch--name of the main branch..created by defaul
+
+its possible to checkout branch in same way as u checkout a commit
+
+merging--process of combinig 2 branches/commits
+
+git branch ---create and view branches
+
+create a branch when you are about to work on a new feature..useful especially when repo is share publically 
+
+once a feature or bug fix on a branch is complete-can update master to point to the current branch or if there is a change in the master can merge master with your branch
+
+to see the visual representation of the commit history-> git log --graph --oneline master coins
+
+git checkout -b new_branch_name- this cmd is equivalent to 2 commands- 1)git branch new_branch_name 2)git checkout new_branch_name
+
+
+git merge will also include the currently checked-out branch in the merged version. So if you have branch1 checked out, and you run git merge branch2 branch3, the merged version will combine branch1 as well as branch2 and branch3. That’s because the branch1 label will update after you make the merge commit, so it’s unlikely that you didn’t want the changes from branch1 included in the merge. For this reason, you should always checkout one of the two branches you’re planning on merging before doing the merge. Which one you should check out depends on which branch label you want to point to the new commit.
+
+Since the checked-out branch is always included in the merge, you may have guessed that when you are merging two branches, you don't need to specify both of them as arguments to git merge on the command line. If you want to merge branch2 into branch1, you can simply git checkout branch1 and then type git merge branch2. The only reason to type git merge branch1 branch2 is if it helps you keep better mental track of which branches you are merging.
+
+Also, since the two branches are merged, the order in which they are typed into the command line does not matter. The key is to remember that git merge always merges all the specified branches into the currently checked out branch, creating a new commit for that branch.
+
+git show commit- diff of commit with its parent
+
+git -d branch_name-delete a branch label
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
