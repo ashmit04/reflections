@@ -1,60 +1,38 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
+1)How did viewing a diff between two versions of a file help you see the bug that was introduced?
 
-    Abc
-    sd
+    It helps in exactly locating the lines that may have caused the bug among thousand of lines of code.
 
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
+2)How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 
-  XYZ
-  zsd
+  New additions to a project may bring in bugs that may slip pass the testing phase into production. Having a history of the project save we can easily make production code go back to the last bug free version without having to worry about any downtime.
 
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
+3) What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
 
-    sdsd
-    dsd
+   Pros-Better control over the commit.Allows to only commit changes which are logically different rather than having versions saved for even very small changes(like in Google docs automatic case)
 
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
+   Cons-Its an extra task for developers in the whole development life cycle.
 
-    dsdsd
-    cxc
+4) Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
 
-How can you use the commands git log and git diff to view the history of files?
+    Git is a sophisticated tool with programming at its base among other documents it allows for version control.Whereas Google docs is an online collaborative/working software general purpose documents and not mainly code.
 
-   csdcxc
-   xcxc
+5) How can you use the commands git log and git diff to view the history of files?
 
-How might using version control make you more confident to make changes that
-could break something?
+git log can show all the commits made to the project and small summary about the changes which can help in quickly analyzing how files have been modified.
 
-	cas
-	sdsd
+git diff allows to pinpoint the exact changes to two differnt versions of the same file.
 
-Now that you have your workspace set up, what do you want to try using Git for?
+6)How might using version control make you more confident to make changes that could break something?
 
-   xczxc
-   zxcxc
+	With version control we can keep the main focus on development rather than trying to maintain a working product for small changes. Even if a new feature I am working on is to be included down the road I can get other/latest versions of the main project through version-control.
 
- How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+7) Now that you have your workspace set up, what do you want to try using Git for?
+
+  I want Git to setup version control for my projects. Learning Git is a very tool feature in today's developers set of skills.
 
 
-  What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
 
-Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
-
-How can you use the commands git log and git diff to view the history of files?
-
-How might using version control make you more confident to make changes that could break something?
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-What happens when you initialize a repository? Why do you need to do it?
-
-
+My notes from Lesson 1
 A good rule of thumb is to make one commit per logical change
   For example, if you fixed a typo, then fixed a bug in a separate part of the file, you should use one commit for each change since they are logically separate
 
